@@ -1,0 +1,59 @@
+{
+  "name": "congress-erc721-nft",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --template src/template.html --clean --dest 'dist'",
+    "now-start": "serve dist",
+    "deploy": "npm run build && surge ./dist/ congrex.io",
+    "metadata-pipeline": "node scripts/getCurrentCongressMetaData.js  && node scripts/buildMetaDataPages.js",
+    "dev": "preact watch --template src/template.html",
+    "lint": "eslint src",
+    "solium": "solium -d contracts/",
+    "truffle-compile-dev": "rm -rf build && truffle compile --network development",
+    "truffle-migrate-dev": "rm -rf build && truffle migrate --network development",
+    "truffle-migrate-rinkeby": "rm -rf build && truffle migrate --network rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruzw/CongressToken.git"
+  },
+  "author": "cruzw",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/cruzw/CongressToken/issues"
+  },
+  "homepage": "https://github.com/cruzw/CongressToken#readme",
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "bulma-extensions": "^1.0.31",
+    "ethereumjs-abi": "^0.6.5",
+    "node-fetch": "^2.1.2",
+    "preact": "^8.2.1",
+    "preact-compat": "^3.17.0",
+    "serve": "^7.0.1",
+    "tiny-promisify": "^1.0.0",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/polyfill": "^7.0.0-beta.47",
+    "@babel/register": "^7.0.0-beta.47",
+    "eslint": "^4.5.0",
+    "eslint-config-synacor": "^1.1.0",
+    "if-env": "^1.0.0",
+    "ipfs-api": "^22.0.1",
+    "preact-cli": "^2.0.0",
+    "sharp": "^0.20.2",
+    "signale": "^1.1.0",
+    "truffle-contract": "^3.0.5",
+    "truffle-flattener": "^1.2.5",
+    "truffle-hdwallet-provider": "0.0.5",
+    "zeppelin-solidity": "^1.9.0"
+  }
+}

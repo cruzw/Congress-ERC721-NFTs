@@ -1,0 +1,10 @@
+{
+    "name": "Congress Token",
+    "short_name": "Congrex.io",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "lang": "en-US",
+    "background_color": "#fff",
+    "theme_color": "#673ab8",
+}

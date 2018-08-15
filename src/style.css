@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,700|EB+Garamond:400,500,700');
+html, body {
+  font: 14px/1.21;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  background-color: lightgrey;
+}
+
+/* Bulma Modifications */
+
+.title {
+  font-family: 'Abhaya Libre', serif;
+}
+
+.subtitle {
+  font-family: 'EB Garamond', serif;
+}
+
+.box {
+  background-color: rgba(240, 240, 240, 0.33);
+}
+
+.level {
+  padding-bottom: 100px;
+}
+
+/* Hero */
+
+.hero {
+  background: url('assets/images/trianglify.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom: 5px solid white;
+}
+
+.hero .is-logo {
+  animation: hueRotate 4s ease-out;
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg) blur(100px);
+  }
+  45% {
+    filter: hue-rotate(30deg) blur(0px);
+  }
+  50% {
+    filter: hue-rotate(30deg) blur(5px);
+  }
+  100% {
+    filter: hue-rotate(0deg) blur(0px);;
+  }
+}
+
+.hero-body {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.hero-body img {
+  margin: 0 auto 30px auto;
+  padding-top: 0 !important;
+  max-width: 200px;
+}
+
+@media (min-width: 700px) {
+  .hero-body img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero-body img {
+    max-width: 350px;
+  }
+}
+
+.hero-body .title {
+  font-family: 'Abhaya Libre', serif;
+}
+
+/* About */
+
+#about p {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* Grid */
+
+.repGrid {
+  background: linear-gradient(-100deg, rgba(52, 31, 151, 0.33), rgba(52, 31, 151, 0.66)), url('assets/images/US-Capitol.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.search {
+  max-width: 660px;
+  background: linear-gradient(to left, rgba(9, 132, 227, 0.9), rgba(214, 48, 49, 0.9));
+  margin: 0 auto;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.columns.is-multiline {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Card */
+
+.card {
+  background-color: rgba(240, 240, 240, 0.85)
+}
+
+.card-footer-item span a {
+  color: rgb(52, 31, 151)
+}
+
+.media .image img {
+  border-radius: 5px;
+}
+
+.opensea {
+  display: inline-block;
+  transform: translateY(4px);
+  margin-right: 5px;
+}
+
+/* FAQ */
+
+.is-faq {
+  background: linear-gradient(to left, rgba(214, 48, 49, 0.66), rgba(9, 132, 227, 0.66)), url('assets/images/freddie-collins-309833-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.is-faq .container {
+  max-width: 600px;
+}
+
+.is-faq h2 {
+  font-size: 4rem !important;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.is-faq .message {
+  background: none;
+}
+
+.is-faq .message-header {
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  background: linear-gradient(to right, rgba(52, 31, 151, 0.9), rgba(9, 132, 227, 0.66));
+}
+
+.is-faq .message-body {
+  background: rgba(240, 240, 240, 0.9)
+}
+
+
+/* Donations */
+
+.is-donations {
+  background: white;
+}
+
+.is-donations .level-item {
+  margin-top: 25px;
+}
+
+.is-donations .subtitle {
+  margin-top: 2.5rem;
+}
+
+/* Footer */
+
+footer.footer {
+  background: url('assets/images/trianglify.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  color: white;
+}
+
+footer.footer strong {
+  color: white;
+}
+
+footer.footer p {
+  font-family: 'EB Garamond', serif;
+}
+
+footer.footer a {
+  color: white;
+}
+
+footer.footer a:hover {
+  color: #3273dc;
+}
+
+/* Loading */
+
+.pageloader {
+  transform: translateY(0%) !important;
+  background: linear-gradient(70deg, rgba(214, 48, 49, 0.9), rgba(9, 132, 227, 0.9));
+}
+
+
+/* CTA */
+.cta {
+  padding: 10px 0;
+  margin-bottom: 0 !important;
+  border-radius: 0;
+}
+
+
+
+#about .columns {
+  margin: 35px auto 0 auto;
+  max-width: 1200px;
+}
+
+#about .card {
+  padding-top: 30px;
+}
